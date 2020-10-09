@@ -30,6 +30,8 @@ Steps I took to complete assignment:
 
 
 Link to Video: https://drive.google.com/file/d/1y6rFu5wP7WugJNiya-hA4zIbms0wlMQL/view
+
+
 Heroku Link: https://immense-anchorage-71140.herokuapp.com/
 
 ##### Emily Goeres, 
