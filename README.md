@@ -22,7 +22,8 @@ Steps I took to complete assignment:
     -Set up the express app to create an actual url
     -Added routes between each page
     -app.listen to make it so the app listens to the server
-5. Deployed app on heroku
+5. Made it so server runs until it's prompted to stop when app is not running
+6. Deployed app on heroku
 
 ![NoteTaker](https://github.com/emilygoeres/notetaker/blob/main/notetaker3.PNG)
 ![NoteTaker](https://github.com/emilygoeres/notetaker/blob/main/notetaker.PNG)
