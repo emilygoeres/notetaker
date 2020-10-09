@@ -18,9 +18,9 @@ Steps I took to complete assignment:
 5. Added routes for the notes to the home page and to the notes page
 6. Added a route to clear all notes
 
-![NoteTaker]()
-![NoteTaker]()
-![NoteTaker]()
+![NoteTaker](https://github.com/emilygoeres/notetaker/blob/main/notetaker3.PNG)
+![NoteTaker](https://github.com/emilygoeres/notetaker/blob/main/notetaker.PNG)
+![NoteTaker](https://github.com/emilygoeres/notetaker/blob/main/notetaker1.PNG)
 
 
 Link to Video: 
