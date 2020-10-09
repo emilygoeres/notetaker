@@ -29,7 +29,7 @@ Steps I took to complete assignment:
 ![NoteTaker](https://github.com/emilygoeres/notetaker/blob/main/notetaker1.PNG)
 
 
-Link to Video: 
+Link to Video: https://drive.google.com/file/d/1y6rFu5wP7WugJNiya-hA4zIbms0wlMQL/view
 
 ##### Emily Goeres, 
 ### Univeristy of Washington
