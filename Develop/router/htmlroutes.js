@@ -2,12 +2,12 @@
 const router = express.Router();
 const path = require('path');
 
-app.get("/api/notes", function (req, res) {
-    res.sendFile(path.join(__dirname, "notes.html"));
+router.get("/notes", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/notes.html"));
 });
 
-app.get(`*`, function (req, res) {
-    res.sendFile(path.join(__dirname, "index.html"));
+router.get("*", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
 module.exports = router;
