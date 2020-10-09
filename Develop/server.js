@@ -1,56 +1,25 @@
 // Dependencies
 const express = require("express");
-const router = express.Router();
-const fs = require("fs");
-const path = require('path');
 
 // Sets up the Express App
 var app = express();
 var PORT = process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing
+app.use(express.urlencoded({extended:true})) 
+app.use(express.json())
 app.use(express.static("public"))
 
-// let dbdata = fs.readFileSync(path.join(_dirname, "../data/db.json"), "utf8");
-// dbData = JSON.parse(dbData);
+// Creating routes between each page
+var apiroutes = require("./router/apiroutes")
+var htmlroutes = require("./router/htmlroutes")
 
-// Array of notes
-var notes:[
-    // {
-        // "Note Title":"Groceies",
-        // "Note Text":"Cougar Gold Cheese"
-    // },
-];
+app.use(apiroutes)
+app.use(htmlroutes)
 
-// Get route for notes
-router.get("/notes", function (req, res) {
-    res.json(noteData)
+// This is making the app listen to the server
+app.listen(PORT, function(){
+    console.log("App listening on PORT" + PORT)
 })
-app.get("/notes", function (req, res) {
-    res.sendFile(path.join(__dirname, "home.html"));
-});
-
-app.get("*", function (req, res) {
-    res.sendFile(path.join(__dirname, "index.html"));
-});
-
-// Get route to clear all notes
-router.get("/clear", function (req, res) {
-    noteData = [];
-    res.send("Deleted")
-})
-
-// Route to add note
-
-
-
-
-fs.writeFileSync(path.join(_dirname, "../data/db.json"), JSON.stringify(newDBState, null, 2));
-res.json(writeNote)
-
-});
-
-module.exports = router;
-
 
 

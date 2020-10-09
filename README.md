@@ -18,9 +18,9 @@ Steps I took to complete assignment:
 5. Added routes for the notes to the home page and to the notes page
 6. Added a route to clear all notes
 
-![NoteTaker](https://github.com/emilygoeres/employee-summary-homework/blob/main/Develop/employee.PNG)
-![NoteTaker](https://github.com/emilygoeres/employee-summary-homework/blob/main/Develop/employee1.PNG)
-![NoteTaker](https://github.com/emilygoeres/employee-summary-homework/blob/main/Develop/employee2.PNG)
+![NoteTaker]()
+![NoteTaker]()
+![NoteTaker]()
 
 
 Link to Video: 
