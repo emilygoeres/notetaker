@@ -7,7 +7,7 @@ Project Description: This project allows the user to take notes and save notes e
 
 Installations: npm i 
 
-Usage: This project allows the user to take notes and save notes even when the page has been refreshed. It also allows the user to delete notes when they don't need them anymore.
+Usage: The notetaker project has you download npm i, create router folders, use dependencies, has you setup an express app to make the app listen to the server and has you deploy your app on heroku.
 
 
 Steps I took to complete assignment:
