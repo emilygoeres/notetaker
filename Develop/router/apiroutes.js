@@ -1,19 +1,12 @@
 // Dependencies
-const router = express.Router();
+const router = require ("express").Router();
 const fs = require("fs");
-let dbnotes = fs.readFileSync("../db/db.json", "utf8");
-dbnotes = JSON.parse(dbnotes);
-
-// Array of notes
-// var notes:[
-//     // {
-//         // "Note Title":"Groceies",
-//         // "Note Text":"Cougar Gold Cheese"
-//     // },
-// ];
+let dbnotes = []
+// dbnotes = JSON.parse(dbnotes);
 
 // Get route for notes
 router.get("/api/notes", function (req, res) {
+    dbnotes=JSON.parse(fs.readFileSync("./db/db.json", "utf8"))
     res.json(dbnotes)
 })
 
@@ -28,7 +21,7 @@ router.post("/api/notes", function (req, res) {
         text: req.body.text
     }
     dbnotes.push(newNote)
-    fs.writeFileSync("../db/db.json", JSON.stringify(dbnotes));
+    fs.writeFileSync("./db/db.json", JSON.stringify(dbnotes));
     res.json(dbnotes)
 
 });
@@ -43,7 +36,7 @@ router.delete("/api/notes/:id", function (req, res) {
     }
     console.log(noteData)
     dbnotes = noteData
-    fs.writeFileSync("../db/db.json", JSON.stringify(dbnotes));
+    fs.writeFileSync("./db/db.json", JSON.stringify(dbnotes));
     res.json(dbnotes)
 })
 

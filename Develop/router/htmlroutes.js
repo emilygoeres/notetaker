@@ -1,5 +1,5 @@
 // Dependencies
-const router = express.Router();
+const router = require ("express").Router();
 const path = require('path');
 
 router.get("/notes", function (req, res) {
